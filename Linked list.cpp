@@ -8,13 +8,13 @@ struct point
 
 };
 
-class LinkedList {
+class List {
 
 	point* head;
 	
 public:
 	
-	LinkedList() {
+	List() {
 		head = new point();
 	}
 	int panjang() {
