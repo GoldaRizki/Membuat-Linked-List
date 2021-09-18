@@ -37,14 +37,25 @@ public:
 			sementara = sementara->next;
 		}
 
-		tambah->angka = p;
+		tambah->angka = p; 
 
 		sementara->next = tambah;
 
 
 
 	};
+	void tampil() {
 
+		point temp = point();
+		temp = *head;
+
+		while (temp.next != NULL) {
+			temp = *temp.next;
+			cout << temp.angka << " ";
+
+		}
+
+	}
 };
 
 int main() {
